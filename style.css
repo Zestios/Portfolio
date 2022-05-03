@@ -1,0 +1,48 @@
+/* Initial setup */
+:root {
+  /* Website color palette */
+  --color-primary: #2F6690;
+  --color-secondary: #84714F;
+  --color-tertiary: #D9DCD6;
+}
+
+*,
+*:after,
+*:before {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  /* Sets the font-size to 10px (62.5% of 16px is 10px) Easier to use REM units */
+  font-size: 62.5%;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  color: #000;
+}
+
+h3 {
+  margin-bottom: 2.5rem;
+}
+
+a {
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 5px 0;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+}
