@@ -1,8 +1,8 @@
 /* Initial setup */
 :root {
   /* Website color palette */
-  --color-primary: #2F6690;
-  --color-secondary: #84714F;
+  --color-primary: #0960a3;
+  --color-secondary: #8d641d;
   --color-tertiary: #D9DCD6;
 }
 
@@ -26,10 +26,6 @@ html, body {
   color: #000;
 }
 
-h3 {
-  margin-bottom: 2.5rem;
-}
-
 a {
   color: #000;
 }
@@ -40,9 +36,95 @@ ul {
 
 p {
   margin: 5px 0;
-  line-height: 1.7;
 }
 
 img {
   max-width: 100%;
 }
+
+
+/* Box styling */
+
+
+
+/* Grid styles */
+
+
+
+/* Background classes */
+.section-header {
+  height: 100vh;
+  background-image: -webkit-linear-gradient(rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.4)), url(img/header.jpg);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-header p {
+  color: var(--color-secondary);
+}
+
+
+/* Main navigation */
+
+
+
+/* Mobile navigation */
+
+
+
+/* Buttons */
+
+
+
+/* Text styling classes */
+.text-center {
+  text-align: center;
+}
+
+.text-x-small {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.text-small {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.text-medium {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.text-large {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.text-x-large {
+  font-size: 4.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.title-header {
+  font-size: 6rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-top: 10vh;
+}
+
+.text-header {
+  font-size: 3.25rem;
+  letter-spacing: 1px;
+}
+
+
+/* Padding / Margin */
+
+
+
+/* Media queries */
