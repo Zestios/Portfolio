@@ -2,7 +2,7 @@
 :root {
   /* Website color palette */
   --color-primary: #0960a3;
-  --color-secondary: #9B7E46;
+  --color-secondary: #e69900;
   --color-tertiary: #D9DCD6;
 }
 
@@ -149,7 +149,7 @@ img {
 }
 
 .box-c ion-icon {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-size: 6rem;
 }
 
