@@ -56,6 +56,10 @@ img {
   color: #222;
 }
 
+.section {
+  margin-bottom: 2.5rem;
+}
+
 
 /* Header */
 .header {
@@ -79,18 +83,18 @@ img {
 
 
 /* Section A */
-.section-a {
-  padding: 0 5rem;
-}
-
 
 /* Box A */
 .box-content-a {
   display: flex;
-  width: 60%;
-  gap: 5rem;
+  width: 75%;
+  gap: 7.5rem;
   margin: 0 auto;
   align-items: center;
+}
+
+.box-content-a img {
+  border-radius: 50%;
 }
 
 
@@ -105,7 +109,7 @@ img {
 }
 
 .box-b ul {
-  margin-top: 5rem;
+  margin-top: 3rem;
   gap: 5rem;
   display: flex;
   flex-direction: row;
@@ -127,7 +131,7 @@ img {
 
 /* Box C */
 .box-c ul {
-  margin-top: 5rem;
+  margin-top: 2rem;
   gap: 5rem;
   display: flex;
   flex-direction: row;
@@ -144,13 +148,27 @@ img {
   background-color: var(--color-tertiary);
 }
 
-.box-c li h3 {
+.box-c li h4 {
     font-weight: 600;
 }
 
 .box-c ion-icon {
   color: var(--color-primary);
   font-size: 6rem;
+}
+
+
+/* Box D */
+.box-d {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.image-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 5rem;
 }
 
 
@@ -193,11 +211,10 @@ img {
 .text-large {
   font-size: 2.75rem;
   font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   position: relative;
   display: inline-block;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-  text-transform: uppercase;
 }
 
 .text-large::before {
@@ -208,6 +225,26 @@ img {
   width: 4rem;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-top: 3px solid var(--color-secondary);
+}
+
+.text-large-2 {
+  font-size: 2.75rem;
+  font-weight: 400;
+  /* margin-bottom: 30px; */
+  padding-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.text-large-2::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  margin-left: 1.5rem;
+  top: 50%;
+  transform: translateY(-100%);
+  width: 4rem;
   border-top: 3px solid var(--color-secondary);
 }
 
