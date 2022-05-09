@@ -18,6 +18,7 @@ html {
   box-sizing: border-box;
   /* Sets the font-size to 10px (62.5% of 16px is 10px) Easier to use REM units */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 html, body {
@@ -59,7 +60,8 @@ img {
 .section {
   width: 95%;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
+  padding: 2.5rem 0;
 }
 
 
@@ -87,6 +89,10 @@ img {
 
 /* SECTION A */
 /* Box A */
+#about {
+  scroll-margin-top: 5rem;
+}
+
 .box-content-a {
   display: flex;
   width: 70%;
@@ -165,6 +171,10 @@ img {
 
 /* SECTION B */
 /* Box D */
+#projects {
+  scroll-margin-top: 7.5rem;
+}
+
 .section-b box-d {
   background-color: var(--color-tertiary);
 }
@@ -187,11 +197,94 @@ img {
 
 
 /* Main navigation */
+.navbar {
+  z-index: 9;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: var(--color-primary);
+  padding: 20px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+  0 0 2px rgb(0 0 0 / 7%);
+}
 
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.navbar__menu {
+  margin-left: 20px;
+}
+
+.navbar__menu a {
+  letter-spacing: 1.5px;
+}
 
 
 /* Mobile navigation */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background: none;
+  border: none;
+  z-index: 9;
+  transition: all .3s;
+}
 
+.hamburger-top, .hamburger-middle, .hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 24px;
+  background-color: #000;
+  transform: rotate(0);
+  transition: all .5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.active .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.active .hamburger-middle {
+  display: none;
+}
+
+.active .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
 
 
 /* Buttons */

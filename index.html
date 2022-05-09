@@ -13,11 +13,52 @@
 
 <body>
   <!-- Main navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar__brand">
+        <a href="#home">JB</a>
+      </div>
+
+      <div>
+        <ul class="navbar__menu">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hamburger menu -->
+      <button type="button" class="hamburger" id="hamburger-btn">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+  </nav>
 
   <!-- Mobile navigation -->
+  <div class="mobile-menu hidden" id="mobile-menu">
+    <ul>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Projects</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
 
   <!-- Header -->
-  <section class="box header text-center">
+  <section class="box header text-center" id="home">
     <div class="box-inner">
       <h1 class="title-header">Jacob Bégin</h1>
       <p class="text-header">Self-taught Front-End Developer</p>
@@ -27,7 +68,7 @@
   <!-- Section A -->
   <section class="section section-a">
     <!-- Box A -->
-    <div class="box box-a">
+    <div class="box box-a" id="about">
       <div class="box-title">
       <h2 class="text-x-large">About me</h2>
       </div>
@@ -110,7 +151,7 @@
   </section>
 
   <!-- Section B -->
-  <section class="section section-b">
+  <section class="section section-b" id="projects">
     <div class="box-title">
       <h2 class="text-x-large">My Projects
       </h2>
@@ -156,6 +197,8 @@
       </div>
     </div>
   </section>
+
+  <footer class="footer" id="contact"></footer>
 
   <script src="script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
