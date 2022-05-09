@@ -318,6 +318,33 @@ img {
 }
 
 
+/* Footer */
+.footer-box {
+  padding: 5rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-box ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-box a {
+  font-size: 5rem;
+  color: #fff;
+  transition: all .3s;
+}
+
+.footer-box a:hover {
+  color: #000;
+}
+
 /* Buttons */
 .btn {
   margin-top: 2rem;
