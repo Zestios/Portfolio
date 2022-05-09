@@ -3,7 +3,7 @@
   /* Website color palette */
   --color-primary: #0960a3;
   --color-secondary: #e69900;
-  --color-tertiary: #f0f0f0;
+  --color-tertiary: #f2f2f2;
 }
 
 *,
@@ -45,11 +45,7 @@ img {
 
 /* Box styling */
 .box {
-  padding: 6rem 0;
-}
-
-.box-d, .box-e {
-  padding: 3rem 0;
+  padding: 7.5rem 0;
 }
 
 .box-title {
@@ -91,7 +87,7 @@ img {
 /* Box A */
 .box-content-a {
   display: flex;
-  width: 75%;
+  width: 70%;
   gap: 7.5rem;
   margin: 0 auto;
   align-items: center;
@@ -150,6 +146,8 @@ img {
   gap: .5rem;
   padding: 3rem;
   background-color: var(--color-tertiary);
+  border: 2px solid var(--color-primary);
+  border-radius: 3px;
 }
 
 .box-c li h4 {
@@ -168,7 +166,7 @@ img {
 }
 
 .section-b .box-content {
-  width: 75%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -197,8 +195,49 @@ img {
 
 
 /* Buttons */
+.btn {
+  margin-top: 2rem;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  background: none;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 7px 16px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  transition: all .3s;
+}
 
+.btn-primary-light {
+  border-color: var(--color-primary);
+  background-color: #fff;
+}
 
+.btn-secondary-light {
+  border-color: var(--color-secondary);
+  background-color: #fff;
+}
+
+.btn a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  transition: all .3s;
+}
+
+.btn-primary-light:hover {
+  background-color: var(--color-primary);
+}
+
+.btn-secondary-light:hover {
+  background-color: var(--color-secondary);
+}
+
+.btn:hover a {
+  color: #fff;
+}
 
 /* Text styling classes */
 .text-center {
