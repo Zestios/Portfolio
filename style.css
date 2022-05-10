@@ -166,6 +166,11 @@ img {
 .box-c ion-icon {
   color: var(--color-primary);
   font-size: 6rem;
+  transition: all .3s;
+}
+
+.box-c ion-icon:hover {
+  color: var(--color-secondary);
 }
 
 
@@ -223,7 +228,7 @@ img {
 }
 
 .navbar a:hover {
-  color: #000;
+  color: var(--color-secondary);
 }
 
 .navbar-container {
@@ -335,14 +340,24 @@ img {
   gap: 2rem;
 }
 
-.footer-box a {
+.footer-box ul a {
   font-size: 5rem;
   color: #fff;
   transition: all .3s;
 }
 
-.footer-box a:hover {
-  color: #000;
+.footer-box ul a:hover {
+  color: var(--color-secondary);
+}
+
+.email {
+  text-decoration: none;
+  color: #fff;
+  transition: all .3s;
+}
+
+.email:hover {
+  color: var(--color-secondary);
 }
 
 /* Buttons */
